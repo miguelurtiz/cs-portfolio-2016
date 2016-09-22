@@ -1,0 +1,16 @@
+#navbar {
+    text-align:center;
+    background-color: #4da6ff;
+    border-style: ridge;
+    padding: 12px;
+    
+}
+
+
+
+#navbar > li {
+    background-color: #3399ff;
+    display: inline-block;
+    padding: 15px;
+    border-style: outset;
+}
