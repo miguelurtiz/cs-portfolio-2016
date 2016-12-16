@@ -1,0 +1,62 @@
+html{
+     background: url(http://airvidtech.com/wp-content/uploads/2015/07/blue-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+    
+}
+
+h1{
+    text-align: center;
+    color: #ffffff;
+    font-family: "verdana", serif;
+    text-shadow: 3px 3px #00004d;
+}
+
+ul{
+    font-family: "verdana", serif;
+            color: #ffffff;
+}
+
+input{
+    background-color: #c5d190;
+    border-style: inset;
+    height: 100px;
+    width: 10%;
+    font-size: 60px;
+    color: #2b2d1f;
+}
+
+select{
+    background-color: #c5d190;
+    border-style: inset;
+    height: 103px;
+    width: 10%;
+    font-size: 60px;
+    color: #2b2d1f;
+}
+
+button{
+    background-color: #f73d3d;
+    border-style: inset;
+    height: 50px;
+    width: 10%;
+    font-size: 23px;
+    color: #470e0e;
+}
+
+p{
+    
+}
+
+div{
+    text-align: center;
+    color: #ffffff;
+    font-family: "verdana", serif;
+    text-shadow: 2px 2px #00004d;
+    font-size: 50px;
+}

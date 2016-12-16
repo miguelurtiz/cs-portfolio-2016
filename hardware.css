@@ -1,0 +1,39 @@
+html {
+  background: url(http://airvidtech.com/wp-content/uploads/2015/07/blue-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+            }
+            
+            ul{
+            font-family: 'Nunito', sans-serif;
+            color: #ffffff;
+            }
+            
+            img{
+            float: left;
+            margin: 0 0 40px 40px;
+            }
+            
+            h1{
+            text-align: center;
+            color: #ffffff;
+            font-family: 'Nunito', sans-serif;
+            text-shadow: 3px 3px #00004d;
+            }
+            
+            h2{
+            text-align: center;
+            color: #ffffff;
+            font-family: 'Nunito', sans-serif;
+            text-shadow: 3px 3px #00004d;
+            text-decoration: underline;
+            }
+            
+            p{
+            text-align: center;
+            color: #ffffff;
+            font-family: 'Nunito', sans-serif;
+            text-shadow: 2px 2px #00004d;
+        }

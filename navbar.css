@@ -7,10 +7,16 @@
 }
 
 
-
 #navbar > li {
     background-color: #3399ff;
     display: inline-block;
     padding: 15px;
     border-style: outset;
+}
+
+.container{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 3%;
+    padding-right: 3%;
 }

@@ -1,0 +1,93 @@
+html{
+     background: url(http://airvidtech.com/wp-content/uploads/2015/07/blue-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Nunito', sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 3px 3px #00004d;
+}
+
+h2{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 3px 3px #00004d;
+}
+
+h3{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 3px 3px #00004d;
+}
+
+ul{
+    font-family: 'Nunito', sans-serif;
+            color: #ffffff;
+}
+
+input{
+    background-color: #c5d190;
+    border-style: inset;
+    height: 30px;
+    width: 50%;
+    font-size: 30px;
+    color: #2b2d1f;
+    font-family: 'Nunito', sans-serif;
+    float: inherit;
+    margin: 0 0 40px 40px;
+}
+
+select{
+    background-color: #c5d190;
+    border-style: inset;
+    height: 60px;
+    width: 9.9%;
+    font-size: 40px;
+    color: #2b2d1f;
+}
+
+button{
+    background-color: #f73d3d;
+    border-style: inset;
+    height: 50px;
+    width: 10%;
+    font-size: 30px;
+    color: #470e0e;
+    font-family: 'Nunito', sans-serif;
+}
+
+p{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 3px 3px #00004d;
+    font-size: 25px;
+}
+
+div{
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px #00004d;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#output {
+    list-style-type: none;
+}
+
+#delbutton{
+    height: 50px;
+    width: 15%;
+    font-size: 30px;
+    color: #470e0e;
+    font-family: 'Nunito', sans-serif;
+}

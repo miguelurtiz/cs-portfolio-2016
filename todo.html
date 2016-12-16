@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- These two links below link 
+        the HTML to different CSS files. -->
+        <link rel="stylesheet" href="todo.css" type="text/css"/>
+        <link rel="stylesheet" href="navbar.css" type="text/css"/>
+        
+        <!-- This link specifically gives the font a good look. -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        
+        <title> My A.C.S. Website - Miguel Urtiz </title>
+    </head>
+    <body>
+        <center>
+        <!-- This is the Code for the Navigational Bar placed 
+        above the screen of the website. -->
+        <ul id="navbar">
+           <li><a href="index.html"> About Me </a></li>
+           <li><a href="hardware.html"> Hardware </a></li>
+           <li><a href="calculate.html"> Calculator </a></li>
+           <li> Todo List </li>
+           <li><a href="#"> Vindinium </a></li>
+           <li><a href="#"> Big Project </a></li>
+           <li><a href="howtotodo.html"> How To </a></li>
+           </ul>
+
+    <h1> To-Do List </h1>
+    <h2> With the To-Do List, you can create a list of items for your life needs. </h2>
+    <h3> Type anything in the box below, select a color, and press enter to produce an itme for your list. </h3>
+  
+      <input id="input"> <select id="colorinput">
+  <option value="Black"> Black (Default) </option>
+  <option value="Green"> Green </option>
+  <option value="White"> White </option>
+  <option value="Red"> Red </option>
+    </select> <button id="enter"> Enter </button>
+ 
+   <a href="javascript:history.go(0)"></a>
+   <form>
+       <button id="delbutton" onClick="history.go(0)"> Delete All </button>
+       </form>
+   
+  <div id="output">
+      <ul id="lister">
+      </ul>
+  </div>
+  <script type="text/javascript" src="todo.js"></script>
+    </body>
+</html>
