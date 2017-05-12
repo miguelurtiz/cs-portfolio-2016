@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <style>
+        html {
+            background: url(http://airvidtech.com/wp-content/uploads/2015/07/blue-background.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 3px 3px #00004d;
+            font-family: 'Nunito', sans-serif;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 3px 3px #00004d;
+            text-decoration: underline;
+            font-family: 'Nunito', sans-serif;
+        }
+        
+        ul {
+            color: #ffffff;
+            font-family: 'Nunito', sans-serif;
+        }
+        
+        p {
+            text-align: center;
+            color: #ffffff;
+            font-family: 'Nunito', sans-serif;
+            text-shadow: 2px 2px #00004d;
+        }
+        
+        button{
+            text-align:center;
+            background-color: #bcbcbc;
+            border-style: ridge;
+            padding: 12px;
+        }
+        .row > * {
+            display:inline-block;
+            /*border:2px solid black;*/
+        }
+        .row{
+            width: 100%;
+            background-color: transparent;
+        }
+        
+        #canvas{
+            background: white;
+        }
+    </style>
+
+    <link rel="stylesheet" href="navbar.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <title> My A.C.S. Website - Miguel Urtiz </title>
+</head>
+
+<body>
+
+    <ul id="navbar">
+        <li><a href="index.html"> About Me </a></li>
+        <li><a href="hardware.html"> Hardware </a></li>
+        <li><a href="calculate.html"> Calculator </a></li>
+        <li><a href="todo.html"> Todo List </a></li>
+        <li><a href="vindinium.html"> Vindinium </a></li>
+        <li> Big Project </li>
+        <li><a href="howtobigproject.html"> How To </a></li>
+    </ul>
+
+    <h1> Pixel Art Creator </h1>
+    <font size="5">
+        <p> I have created this webpage for people to let their creative side take control :D</p>
+    </font>
+    
+    <p align="right">
+    <button type="black" onclick="alert('black selected')">Black</button>
+    <button type="white" onclick="alert('white selected')">White</button>
+    <button type="red" onclick="alert('red selected')">Red</button>
+    <button type="orange" onclick="alert('orange selected')">Orange</button>
+    <button type="yellow" onclick="alert('yellow selected')">Yellow</button>
+    <button type="green" onclick="alert('green selected')">Green</button>
+    <button type="blue" onclick="alert('blue selected')">Blue</button>
+    </p>
+    
+    <canvas id="canvas" width="1000" height="600"></canvas>
+
+<script src="BigProject.js"></script>
+
+</body>
+
+</html>

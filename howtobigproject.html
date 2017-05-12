@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html {
+                background: url(http://airvidtech.com/wp-content/uploads/2015/07/blue-background.jpg) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+        
+        ul{
+            font-family: 'Nunito', sans-serif;
+            color: #ffffff;
+        }
+        
+        p{
+            text-align: center;
+            color: #ffffff;
+            font-family: 'Nunito', sans-serif;
+            text-shadow: 2px 2px #00004d;
+        }
+        
+        h1{
+                text-align: center;
+                color: #ffffff;
+                font-family: 'Nunito', sans-serif;
+                text-shadow: 3px 3px #00004d;
+            }
+            
+        pre{
+            background-color: black;
+            width: 550px;
+            padding: 25px;
+            color: #00ff00;
+            font-family: 'Nunito', sans-serif;
+            position: relative;
+            left: 30px;
+        }
+        
+        .right{
+            /*text-align: right;*/
+            width:45%;
+            vertical-align:top;
+            margin-left: 50px;
+        }
+        
+        .row > *{
+            display:inline-block;
+        }
+        
+        
+        </style>
+        
+        <link rel="stylesheet" href="navbar.css" type="text/css"/>
+        
+        
+        <title> My A.C.S. Website - Miguel Urtiz </title>
+        
+    </head>
+    <body>
+        
+        <ul id="navbar">
+           <li><a href="index.html"> About Me </a></li>
+           <li><a href="hardware.html"> Hardware </a></li>
+           <li><a href="calculate.html"> Calculator </a></li>
+           <li><a href="todo.html"> Todo List </a></li>
+           <li><a href="vindinium.html"> Vindinium </a></li>
+           <li><a href="BigProject.html"> Big Project </a></li>
+           <li> How To </li>
+        </ul>
+        
+        <h1> How To: Pixel Art Creator </h1>
+            <font size= "5"><p> Each "How To" Page will give me the chance to explain the different coding methods that I use when creating this website about me and my computer scinece experiences. </p></font>
+            <center>
+            <img src= "https://lh3.googleusercontent.com/tCLkX4IaXoK8ftLZP3fnzeow6y9milLUPm_a016bZk3EsN3IK6S2eWPE7aptUAsokGM=w300" height = "300", width = "300">
+            </center>
+            <font size= "5"><p> In this How To, I will explain how I used HTML and JavaScript to code my own functional Pixel Art Creator. </p></font>
+            <hr>
+        <h1> HTML </h1>
+        <font size= "5"><p> By using HTML, I am able to create elements that are seen upon this webpage.</p></font>
+        <br>
+        
+        <div class="row">
+        <code>
+            <pre>
+               &lt;p align=&quot;right&quot;&gt;<br/>&lt;button type=&quot;black&quot; onclick=&quot;alert('black selected')&quot;&gt;Black&lt;/button&gt;<br/>    &lt;button type=&quot;white&quot; onclick=&quot;alert('white selected')&quot;&gt;White&lt;/button&gt;<br/>    &lt;button type=&quot;red&quot; onclick=&quot;alert('red selected')&quot;&gt;Red&lt;/button&gt;<br/>    &lt;button type=&quot;orange&quot; onclick=&quot;alert('orange selected')&quot;&gt;Orange&lt;/button&gt;<br/>    &lt;button type=&quot;yellow&quot; onclick=&quot;alert('yellow selected')&quot;&gt;Yellow&lt;/button&gt;<br/>    &lt;button type=&quot;green&quot; onclick=&quot;alert('green selected')&quot;&gt;Green&lt;/button&gt;<br/>    &lt;button type=&quot;blue&quot; onclick=&quot;alert('blue selected')&quot;&gt;Blue&lt;/button&gt;<br/>    &lt;/p&gt;<br/>    <br/>    &lt;canvas id=&quot;canvas&quot; width=&quot;1000&quot; height=&quot;600&quot;&gt;&lt;/canvas&gt;<br/><br/>&lt;script src=&quot;BigProject.js&quot;&gt;&lt;/script&gt;<br/><br/>&lt;/body&gt;
+            </pre>
+        </code>
+        <font class= "right" size= "5"><p> By using different button types, we are able to create buttons that can select different colors when drawing. In order to give the width and height of the canvas that we would draw on, we have to link the width and height from the html to javascript by using a canvas id. Lastly, we need to make sure that these elements get connected to the javascript, in order to make these elements function in a way where we would be able to make a pixel art creator.</p></font>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <h1> JavaScript </h1>
+        <font size= "5"><p> By using Javascript, I am able to give functions to the elements that I've created on Html.</p></font>
+        <br>
+        
+        <div class="row">
+            <code>
+                <pre>
+                    function getMousePos(canvas, evt) {<br/>var rect = canvas.getBoundingClientRect();<br/>return {<br/>  x: evt.clientX - rect.left,<br/>  y: evt.clientY - rect.top<br/>};<br/>}
+                </pre>
+            </code>
+            <font class= "right" size= "5"><p> With this code, I am able to find the position coordinates of the mouse when it's upon the canvas. The 'X' value indicates when the mouse moves either left or right. The 'Y' value indicates when the mouse moves either up or down. </p></font>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <code>
+                <pre>
+                    var canvas = document.getElementById('canvas');<br/>var context = canvas.getContext('2d');
+                </pre>
+            </code>
+            <font class="right" size= "5"><p> This piece of coding allows me to create the canvas on the wepage and to make it 2 dimensional.</p></font>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <code>
+                <pre>
+                    canvas.addEventListener('mousemove', function(evt) {<br/>var mousePos = getMousePos(canvas, evt);<br/>var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;<br/>var mousePos = getMousePos(canvas, evt)<br/>}, false);
+                </pre>
+            </code>
+            <font class="right" size="5"><p> This selection of coding makes it where when you place your mouse upon the canvas, it locks on a specific pixel so when you draw, the pixels would be drawn row by row, column by column.</p></font>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <code>
+                <pre>
+                    canvas.addEventListener('mousedown', function(evt){<br/><br/>    context.fillStyle = &quot;black&quot;;<br/><br/>    var mousePos = getMousePos(canvas, evt)<br/>    var x = (mousePos.x - (mousePos.x % 20))<br/>    var y = (mousePos.y - (mousePos.y % 20))<br/>    context.fillRect(x, y, 20, 20);<br/>}, false)
+                </pre>
+            </code>
+            <font class="right" size="5"><p> This coding is very important. This code is used where when you click your mouse on a pixel space that is on the canvas, it fills that pixel space with a black color. The lower portion of the code has a special unit where it identifies: the X axis, the Y axis, the width, and the height (X,Y,W,H). By making both the width and height values 20 (X,Y,20,20), I am able to adjust the size of each and every pixel into 20x20. </p></font>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <code>
+                <pre>
+                    for(var c = 0; c &lt;= 1000; c+= 20){<br/>    context.fillStyle = &quot;grey&quot;;<br/>    context.fillRect(c,0,1,1000)<br/>}<br/><br/>for(var r = 0; r &lt;= 1000; r+= 20){<br/>    context.fillStyle = &quot;grey&quot;;<br/>    context.fillRect(0,r,1000,1)
+                </pre>
+            </code>
+            <font class="right" size="5"><p> This last section of coding is used to make the gray colored grid thats on the canvas. By using the units that I previously used (X,Y,W,H), I can determine whether the group of lines are on the 'X' or 'Y' axis. To do so, I have to create a for loop that gives the values for the variables 'c' (column) and 'r' (row). </p></font>
+        </div>
+
+    </body>
+</html>
